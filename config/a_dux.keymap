@@ -15,12 +15,47 @@
         // This is a sample keymap intended to be replaced with your own
         base_layer {
             bindings = <
-                &kp Q     &kp W     &kp E     &kp R     &kp T     &kp Y     &kp U     &kp I     &kp O     &kp P
-                &kp A     &kp S     &kp D     &kp F     &kp G     &kp H     &kp J     &kp K     &kp L     &kp SEMI
-                &kp Z     &kp X     &kp C     &kp V     &kp B     &kp N     &kp M     &kp COMMA &kp DOT   &kp SLASH
-                                              &kp TAB   &kp BSPC  &kp SPACE &kp ENTER
+                &kp Q     &kp W     &kp E     &kp R         &kp T       &kp Y       &kp U     &kp I     &kp O     &kp P
+                &kp A     &kp S     &kp D     &kp F         &kp G       &kp H       &kp J     &kp K     &kp L     &kp SEMI
+                &kp Z     &kp X     &kp C     &kp V         &kp B       &kp N       &kp M     &kp COMMA &kp DOT   &kp SLASH
+                                              &mt LSHFT DEL &lt 5 BSPC  &lt 5 SPACE &lt 2 ENTER
             >;
         };
 
+       lafayette {
+            bindings = <
+                &kp LS(N6)     &kp LS(COMMA)     &kp LS(PERIOD)     &kp LS(N4)     &kp LS(N5)     &kp LS(N2)     &kp LS(N7)     &kp LS(N8)     &kp APOS     &kp GRAVE
+                &kp A     &kp S     &kp D     &kp F     &kp G     &kp H     &kp J     &kp K     &kp L     &kp SEMI
+                &kp Z     &kp X     &kp C     &kp V     &kp B     &kp N     &kp M     &kp COMMA &kp DOT   &kp SLASH
+                                              &mt LSHFT DEL &lt 5 BSPC  &lt 5 SPACE &lt 2 ENTER
+            >;
+        };
+
+       num_row {
+            bindings = <
+                &kp Q     &kp W     &kp E     &kp R     &kp T     &kp Y     &kp U     &kp I     &kp O     &kp P
+                &kp A     &kp S     &kp D     &kp F     &kp G     &kp H     &kp J     &kp K     &kp L     &kp SEMI
+                &kp Z     &kp X     &kp C     &kp V     &kp B     &kp N     &kp M     &kp COMMA &kp DOT   &kp SLASH
+                                              &mt LSHFT DEL &lt 5 BSPC  &lt 5 SPACE &lt 2 ENTER
+            >;
+        };
+
+       vim_nav {
+            bindings = <
+                &kp Q     &kp W     &kp E     &kp R     &kp T     &kp Y     &kp U     &kp I     &kp O     &kp P
+                &kp A     &kp S     &kp D     &kp F     &kp G     &kp H     &kp J     &kp K     &kp L     &kp SEMI
+                &kp Z     &kp X     &kp C     &kp V     &kp B     &kp N     &kp M     &kp COMMA &kp DOT   &kp SLASH
+                                              &mt LSHFT DEL &lt 5 BSPC  &lt 5 SPACE &lt 2 ENTER
+            >;
+        };
+
+       num_nav {
+            bindings = <
+                &kp Q     &kp W     &kp E     &kp R     &kp T     &kp Y     &kp U     &kp I     &kp O     &kp P
+                &kp A     &kp S     &kp D     &kp F     &kp G     &kp H     &kp J     &kp K     &kp L     &kp SEMI
+                &kp Z     &kp X     &kp C     &kp V     &kp B     &kp N     &kp M     &kp COMMA &kp DOT   &kp SLASH
+                                              &mt LSHFT DEL &lt 5 BSPC  &lt 5 SPACE &lt 2 ENTER
+            >;
+        };
     };
 };
