@@ -40,24 +40,14 @@
     combos {
         compatible = "zmk,combos";
 
-        bt_nxt {
-            bindings = <&bt BT_NXT>;
-            key-positions = <5 25>;
-        };
-
-        bt_prv {
-            bindings = <&bt BT_PRV>;
-            key-positions = <4 24>;
-        };
-
-        bt_clr {
-            bindings = <&bt BT_CLR>;
-            key-positions = <2 3 4>;
-        };
-
         fun_pad {
             bindings = <&mo 5>;
             key-positions = <32 31>;
+        };
+
+        bt_pad {
+            bindings = <&mo 6>;
+            key-positions = <20 0>;
         };
     };
 
@@ -77,10 +67,10 @@
 
         lafayette {
             bindings = <
-&kp CARET  &kp LT    &kp GT    &kp DLLR   &kp PRCNT                                 &kp AT       &kp AMPS  &kp STAR   &kp SQT    &kp GRAVE
-&kp LBRC   &kp LPAR  &kp RPAR  &kp RBRC   &kp EQUAL                                 &kp BSLH     &kp PLUS  &kp MINUS  &kp FSLH   &kp DQT
-&kp TILDE  &kp LBKT  &kp RBKT  &kp UNDER  &kp HASH                                  &kp PIPE     &kp EXCL  &kp SEMI   &kp COLON  &kp QMARK
-                                          &mt LSHFT ESC  &lt 4 BSPC    &lt 4 SPACE  &lt 1 ENTER
+&kp LS(NUMBER_6)      &kp RA(W)  &kp RA(E)  &kp LS(N4)             &kp LS(N5)                                &kp AT       &kp AMPS  &kp STAR   &kp SQT    &kp GRAVE
+&kp LS(LEFT_BRACKET)  &kp RA(S)  &kp RA(D)  &kp LS(RIGHT_BRACKET)  &kp EQUAL                                 &kp BSLH     &kp PLUS  &kp MINUS  &kp FSLH   &kp DQT
+&kp TILDE             &kp LBKT   &kp RBKT   &kp LS(MINUS)          &kp LS(N9)                                &kp PIPE     &kp EXCL  &kp SEMI   &kp COLON  &kp QMARK
+                                                                   &mt LSHFT ESC  &lt 4 BSPC    &lt 4 SPACE  &lt 1 ENTER
             >;
         };
 
@@ -117,6 +107,15 @@
 &kp F5  &kp F6   &kp F7   &kp F8   &trans                    &trans  &trans  &trans  &trans  &trans
 &kp F9  &kp F10  &kp F11  &kp F12  &trans                    &trans  &trans  &trans  &trans  &trans
                                    &trans  &trans    &trans  &trans
+            >;
+        };
+
+        bluetooth {
+            bindings = <
+&trans  &trans         &trans         &trans         &trans                                &trans  &bt BT_CLR    &trans        &trans        &trans
+&trans  &trans         &bt BT_DISC 4  &bt BT_DISC 3  &trans                                &trans  &bt BT_SEL 3  &bt BT_SEL 4  &trans        &trans
+&trans  &bt BT_DISC 2  &bt BT_DISC 1  &bt BT_DISC 0  &trans                                &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans
+                                                     &bt BT_CLR_ALL  &bt BT_CLR    &trans  &trans
             >;
         };
     };
