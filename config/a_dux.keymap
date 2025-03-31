@@ -67,9 +67,9 @@
 
         lafayette {
             bindings = <
-&kp LS(NUMBER_6)      &kp RA(W)  &kp RA(E)  &kp LS(N4)             &kp LS(N5)                                &kp AT       &kp AMPS  &kp STAR   &kp SQT    &kp GRAVE
-&kp LS(LEFT_BRACKET)  &kp RA(S)  &kp RA(D)  &kp LS(RIGHT_BRACKET)  &kp EQUAL                                 &kp BSLH     &kp PLUS  &kp MINUS  &kp FSLH   &kp DQT
-&kp TILDE             &kp LBKT   &kp RBKT   &kp LS(MINUS)          &kp LS(N9)                                &kp PIPE     &kp EXCL  &kp SEMI   &kp COLON  &kp QMARK
+&kp LS(NUMBER_6)      &kp RA(W)  &kp RA(E)  &kp LS(N4)             &kp LS(N5)                                &kp LS(N0)         &kp AMPS       &kp STAR        &kp SQT    &kp GRAVE
+&kp LS(LEFT_BRACKET)  &kp RA(S)  &kp RA(D)  &kp LS(RIGHT_BRACKET)  &kp EQUAL                                 &kp BSLH           &kp LS(EQUAL)  &kp C           &kp MINUS  &kp LS(SINGLE_QUOTE)
+&kp TILDE             &kp LBKT   &kp RBKT   &kp LS(MINUS)          &kp LS(N9)                                &kp LS(BACKSLASH)  &kp LS(O)      &kp LS(PERIOD)  &kp LS(N)  &kp LS(C)
                                                                    &mt LSHFT ESC  &lt 4 BSPC    &lt 4 SPACE  &lt 1 ENTER
             >;
         };
