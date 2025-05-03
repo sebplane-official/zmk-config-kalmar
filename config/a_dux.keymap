@@ -53,6 +53,11 @@
             bindings = <&mo 6>;
             key-positions = <20 0>;
         };
+
+        Mouse {
+            bindings = <&mo 7>;
+            key-positions = <30 33>;
+        };
     };
 
     keymap {
