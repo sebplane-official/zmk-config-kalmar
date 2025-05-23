@@ -44,43 +44,47 @@
     combos {
         compatible = "zmk,combos";
 
-        fun_pad {
+        combo_fun_pad {
             bindings = <&mo 5>;
             key-positions = <32 31>;
         };
 
-        bt_pad {
+        combo_bt_pad {
             bindings = <&mo 6>;
             key-positions = <20 0>;
         };
 
-        Mouse {
+        combo_mouse {
             bindings = <&mo 7>;
             key-positions = <30 33>;
         };
 
-        Alt-Tab {
-            timeout-ms = <30>;
+        combo_alt-tab {
+            timeout-ms = <20>;
             bindings = <&kp LA(TAB)>;
             key-positions = <0 1>;
+            require-prior-idle-ms = <125>;
         };
 
-        Fun5 {
-            timeout-ms = <30>;
+        combo_F5 {
+            timeout-ms = <20>;
             bindings = <&kp F5>;
             key-positions = <2 3>;
+            require-prior-idle-ms = <125>;
         };
 
-        Fun12 {
-            timeout-ms = <30>;
+        combo_F12 {
+            timeout-ms = <20>;
             bindings = <&kp F12>;
             key-positions = <1 2>;
+            require-prior-idle-ms = <125>;
         };
 
-        ScreenShot {
-            timeout-ms = <30>;
+        combo_screenshot {
+            timeout-ms = <20>;
             bindings = <&kp LS(LG(S))>;
             key-positions = <10 11>;
+            require-prior-idle-ms = <125>;
         };
     };
 
