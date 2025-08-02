@@ -58,34 +58,6 @@
             bindings = <&mo 7>;
             key-positions = <30 33>;
         };
-
-        combo_alt-tab {
-            timeout-ms = <20>;
-            bindings = <&kp LA(TAB)>;
-            key-positions = <0 1>;
-            require-prior-idle-ms = <125>;
-        };
-
-        combo_F5 {
-            timeout-ms = <20>;
-            bindings = <&kp F5>;
-            key-positions = <2 3>;
-            require-prior-idle-ms = <125>;
-        };
-
-        combo_F12 {
-            timeout-ms = <20>;
-            bindings = <&kp F12>;
-            key-positions = <1 2>;
-            require-prior-idle-ms = <125>;
-        };
-
-        combo_screenshot {
-            timeout-ms = <20>;
-            bindings = <&kp LS(LG(S))>;
-            key-positions = <10 11>;
-            require-prior-idle-ms = <125>;
-        };
     };
 
     keymap {
@@ -133,16 +105,16 @@
             bindings = <
 &kp TAB    &kp HOME        &kp UP_ARROW  &kp END      &kp PAGE_UP                               &kp MINUS    &kp N7  &kp N8  &kp N9  &kp ESC
 &kp LC(A)  &kp LEFT        &kp DOWN      &kp RIGHT    &kp DOWN                                  &kp C        &kp N4  &kp N5  &kp N6  &kp N0
-&kp LC(Z)  &kp LS(DELETE)  &kp LC(INS)   &kp LS(INS)  &kp LS(TAB)                               &kp DOT      &kp N1  &kp N2  &kp N3  &kp DOT
+&kp LC(Z)  &kp LS(DELETE)  &kp LC(INS)   &kp LS(INS)  &kp LS(TAB)                               &kp DOT      &kp N1  &kp N2  &kp N3  &kp KP_COMMA
                                                       &mt LSHFT DEL  &lt 4 BSPC    &lt 4 SPACE  &lt 1 ENTER
             >;
         };
 
         fun_pad {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &kp C_VOL_UP                    &kp C_BRI_UP  &trans          &trans      &trans      &trans
-&kp F5  &kp F6   &kp F7   &kp F8   &kp C_VOL_DN                    &kp C_BRI_DN  &trans          &trans      &trans      &trans
-&kp F9  &kp F10  &kp F11  &kp F12  &kp C_MUTE                      &trans        &kp C_PREVIOUS  &kp C_PLAY  &kp C_NEXT  &trans
+&kp F1  &kp F2   &kp F3   &kp F4   &kp C_VOL_UP                    &kp C_BRI_UP   &trans          &trans      &trans              &trans
+&kp F5  &kp F6   &kp F7   &kp F8   &kp C_VOL_DN                    &kp C_BRI_DN   &kp LA(ESCAPE)  &trans      &kp LA(LS(ESCAPE))  &trans
+&kp F9  &kp F10  &kp F11  &kp F12  &kp C_MUTE                      &kp LS(LG(S))  &kp C_PREVIOUS  &kp C_PLAY  &kp C_NEXT          &trans
                                    &trans        &trans    &trans  &trans
             >;
         };
