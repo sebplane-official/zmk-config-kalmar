@@ -58,6 +58,20 @@
             bindings = <&mo 7>;
             key-positions = <30 33>;
         };
+
+        Function5 {
+            bindings = <&kp LA(F5)>;
+            key-positions = <0 2>;
+            require-prior-idle-ms = <233>;
+            layers = <0>;
+        };
+
+        Function12 {
+            bindings = <&kp LA(F12)>;
+            key-positions = <0 3>;
+            require-prior-idle-ms = <233>;
+            layers = <0>;
+        };
     };
 
     keymap {
